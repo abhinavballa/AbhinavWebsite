@@ -1,8 +1,9 @@
 import express from "express";
-import 'dotenv/config';
-const apiKey = process.env.OPENAI_API_KEY;
 import { Configuration, OpenAIApi } from "openai";
 import { aboutMe } from "./aboutMeData.js";
+import dotenv from "dotenv";
+dotenv.config();
+
 const app = express();
 app.use(express.json());
 
@@ -12,7 +13,7 @@ const openai = new OpenAIApi(configuration);
 async function getChatResponse(userQuery, context) {
   const prompt = `You are Abhinav's personal assistant. Answer questions about him using only this info:\n${JSON.stringify(context)}\nUser: ${userQuery}\nAssistant:`;
   const response = await openai.createCompletion({
-    model: "gpt-3.5-turbo", // or "gpt-4"
+    model: "gpt-3.5-turbo",
     prompt,
     max_tokens: 150,
     temperature: 0.5,

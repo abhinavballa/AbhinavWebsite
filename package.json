@@ -1,5 +1,6 @@
 {
   "name": "dopefolio",
+  "type": "module",
   "version": "1.0.0",
   "description": "portfolio",
   "main": "index.js",
