@@ -275,6 +275,20 @@ textarea {
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
 
+.about-me {
+  background: #fafafa; }
+  .about-me__content {
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto; }
+  .about-me__text {
+    margin-bottom: 2rem; }
+    .about-me__text .text-primary {
+      color: #333;
+      text-align: left;
+      max-width: 70rem;
+      margin: 0 auto; }
+
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
