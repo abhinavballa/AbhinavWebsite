@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RecipeAgent - Real-time Voice AI (Gordon Ramsay)</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/headshot.png"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Abhinav Balla</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">RecipeAgent - Real-time Voice AI (Gordon Ramsay)</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            A real-time voice agent that talks like Gordon Ramsay, answers cookbook questions using RAG, and performs measurement conversions
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://github.com/abhinavballa/RecipeAgent" class="btn btn--bg" target="_blank">View Source Code</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                RecipeAgent is a sophisticated real-time voice AI system that embodies the personality of Gordon Ramsay while providing intelligent cooking assistance. The system combines advanced AI technologies including speech-to-text, large language models, text-to-speech, and Retrieval-Augmented Generation (RAG) to create an interactive cooking companion that can answer questions from a cookbook PDF and perform measurement conversions.
+              </p>
+            </div>
+            
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Key Features</h3>
+              <ul class="project-details__desc-para">
+                <li><strong>Real-time Voice Interaction:</strong> Live audio processing with speech-to-text and text-to-speech capabilities</li>
+                <li><strong>Gordon Ramsay Persona:</strong> AI agent programmed with Gordon Ramsay's distinctive personality and communication style</li>
+                <li><strong>RAG-powered Cookbook Assistant:</strong> Answers cooking questions by retrieving relevant information from a local PDF cookbook</li>
+                <li><strong>Measurement Conversion Tool:</strong> Converts between different cooking measurements and units</li>
+                <li><strong>LiveKit Cloud Integration:</strong> Real-time media processing and job dispatch</li>
+                <li><strong>React Frontend:</strong> Modern web interface with live transcription display</li>
+              </ul>
+            </div>
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Technical Architecture</h3>
+              <p class="project-details__desc-para">
+                The system is built with a microservices architecture featuring:
+              </p>
+              <ul class="project-details__desc-para">
+                <li><strong>Python Agent (LiveKit Agents):</strong> Core AI logic, persona management, tools, RAG, STT/TTS, and Voice Activity Detection</li>
+                <li><strong>Token Server (FastAPI):</strong> Secure JWT token issuance for frontend authentication</li>
+                <li><strong>React Frontend:</strong> User interface with real-time audio and transcription display</li>
+                <li><strong>LiveKit Cloud:</strong> Media SFU and job dispatch system</li>
+                <li><strong>LlamaIndex RAG:</strong> Document processing and vector search for cookbook queries</li>
+              </ul>
+            </div>
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Technologies Used</h3>
+              <div class="project-details__tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LiveKit Agents</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">LlamaIndex</span>
+                <span class="tech-tag">OpenAI GPT-4</span>
+                <span class="tech-tag">Deepgram STT</span>
+                <span class="tech-tag">Cartesia TTS</span>
+                <span class="tech-tag">Vector Search</span>
+                <span class="tech-tag">RAG</span>
+              </div>
+            </div>
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">RAG Implementation</h3>
+              <p class="project-details__desc-para">
+                The system uses LlamaIndex for document processing and retrieval:
+              </p>
+              <ul class="project-details__desc-para">
+                <li>Processes PDF cookbooks using SimpleDirectoryReader</li>
+                <li>Uses OpenAI text-embedding-3-small for vector embeddings</li>
+                <li>Implements SentenceSplitter with chunk_size=1024 and chunk_overlap=240</li>
+                <li>Persists VectorStoreIndex locally with versioning to prevent data mismatches</li>
+                <li>Provides context-aware responses with page citations when available</li>
+              </ul>
+            </div>
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Workflow</h3>
+              <p class="project-details__desc-para">
+                1. User clicks "Start Call" in the frontend → token server issues JWT → frontend joins LiveKit room<br>
+                2. LiveKit Cloud dispatches job to Python agent worker<br>
+                3. Agent performs STT (Deepgram) → LLM reasoning (OpenAI) → optional tools → TTS (Cartesia/OpenAI)<br>
+                4. Agent publishes audio and synchronized transcriptions to frontend<br>
+                5. Frontend displays live transcripts and plays audio responses
+              </p>
+            </div>
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Tools & Capabilities</h3>
+              <ul class="project-details__desc-para">
+                <li><strong>query_cookbook(question):</strong> RAG-powered cookbook question answering with context retrieval</li>
+                <li><strong>convert_measurements:</strong> Unit conversion tool with basic density assumptions (1 g/ml)</li>
+                <li><strong>Voice Activity Detection:</strong> Silero VAD for turn detection and audio processing</li>
+                <li><strong>Live Transcription:</strong> Real-time text streams with topic 'lk.transcription'</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/abhinav-balla/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/abhinavballa">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Abhinav Balla</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
